@@ -1,6 +1,37 @@
-venv/
+# YOLOv5 specific ignores
+runs/
+weights/
+datasets/
+
+# Model files
+*.pt
+*.pth
+*.weights
+*.onnx
+
+# Data files
+*.jpg
+*.jpeg
+*.png
+*.mp4
+*.avi
+
+# Python ignores
 __pycache__/
 *.pyc
-.ipynb_checkpoints/
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
 .DS_Store
-output/
+Thumbs.db

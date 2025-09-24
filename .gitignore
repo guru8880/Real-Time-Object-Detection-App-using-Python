@@ -1,9 +1,25 @@
-# YOLOv5 specific ignores
+# Create a complete .gitignore file
+echo "# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.so
+.Python
+env/
+venv/
+yolo_env/
+ENV/
+env.bak/
+venv.bak/
+
+# Virtual Environment
+yolo_env/
+
+# YOLO specific
 runs/
 weights/
 datasets/
-
-# Model files
 *.pt
 *.pth
 *.weights
@@ -15,16 +31,9 @@ datasets/
 *.png
 *.mp4
 *.avi
-
-# Python ignores
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-.Python
-env/
-venv/
-.venv/
+*.csv
+*.json
+*.xml
 
 # IDE
 .vscode/
@@ -35,3 +44,7 @@ venv/
 # OS
 .DS_Store
 Thumbs.db
+
+# Logs
+*.log
+logs/"
